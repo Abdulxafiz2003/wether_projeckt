@@ -1,0 +1,358 @@
+{
+	"info": {
+		"_postman_id": "a8fb6ac7-30ac-45b6-98f4-6a30ca516d9e",
+		"name": "Weather_postman_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19321933"
+	},
+	"item": [
+		{
+			"name": "localhost:8095/api/admin/cities-list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2OTM2NzM2MSwiZXhwIjoxNjY5NDUzNzYxfQ.J7099bEQmgLl38ljT4Wcu_5v1ALBIwGQvjkaYWHlhArIwy79C_PBFG3gTnGaEvmE4OkP8qrk_JOqJQrG4nJxAA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/admin/cities-list",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"admin",
+						"cities-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8095/api/admin/user-list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2OTM2NzM2MSwiZXhwIjoxNjY5NDUzNzYxfQ.J7099bEQmgLl38ljT4Wcu_5v1ALBIwGQvjkaYWHlhArIwy79C_PBFG3gTnGaEvmE4OkP8qrk_JOqJQrG4nJxAA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8095/api/admin/user-list",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"api",
+						"admin",
+						"user-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8095/api/admin/edit-user/{id}",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2OTM2NzM2MSwiZXhwIjoxNjY5NDUzNzYxfQ.J7099bEQmgLl38ljT4Wcu_5v1ALBIwGQvjkaYWHlhArIwy79C_PBFG3gTnGaEvmE4OkP8qrk_JOqJQrG4nJxAA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"test\",\r\n    \"email\": \"test@gmail.com\",\r\n    \"password\": \"87654321\",\r\n    \"roles\": [\"user\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8095/api/admin/edit-user/id",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"api",
+						"admin",
+						"edit-user",
+						"id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8095/api/admin/delete-user/{id}",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2OTM2NzM2MSwiZXhwIjoxNjY5NDUzNzYxfQ.J7099bEQmgLl38ljT4Wcu_5v1ALBIwGQvjkaYWHlhArIwy79C_PBFG3gTnGaEvmE4OkP8qrk_JOqJQrG4nJxAA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8095/api/admin/delete-user/id",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"api",
+						"admin",
+						"delete-user",
+						"id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8095/api/admin/add-city-weather",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2OTM2NzM2MSwiZXhwIjoxNjY5NDUzNzYxfQ.J7099bEQmgLl38ljT4Wcu_5v1ALBIwGQvjkaYWHlhArIwy79C_PBFG3gTnGaEvmE4OkP8qrk_JOqJQrG4nJxAA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"citiesName\": \"Tashkent\",\r\n    \"weather\": \"rain\",\r\n    \"degree\": \"6\",\r\n    \"status\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8095/api/admin/add-city-weather",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"api",
+						"admin",
+						"add-city-weather"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8095/api/admin/edit-city",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2OTM2NzM2MSwiZXhwIjoxNjY5NDUzNzYxfQ.J7099bEQmgLl38ljT4Wcu_5v1ALBIwGQvjkaYWHlhArIwy79C_PBFG3gTnGaEvmE4OkP8qrk_JOqJQrG4nJxAA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"citiesName\": \"Tashkent\",\r\n    \"weather\": \"snow\",\r\n    \"degree\": \"8\",\r\n    \"creationDate\": \"2022-11-24\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8095/api/admin/edit-city",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"api",
+						"admin",
+						"edit-city"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8095/api/admin/delete-city/id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8095/api/admin/delete-city/id",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"api",
+						"admin",
+						"delete-city",
+						"id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8095/api/user/cities-name",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2OTM2NzM2MSwiZXhwIjoxNjY5NDUzNzYxfQ.J7099bEQmgLl38ljT4Wcu_5v1ALBIwGQvjkaYWHlhArIwy79C_PBFG3gTnGaEvmE4OkP8qrk_JOqJQrG4nJxAA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8085/api/admin/cities-name",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"admin",
+						"cities-name"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8095/api/admin/cities",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2OTM2NzM2MSwiZXhwIjoxNjY5NDUzNzYxfQ.J7099bEQmgLl38ljT4Wcu_5v1ALBIwGQvjkaYWHlhArIwy79C_PBFG3gTnGaEvmE4OkP8qrk_JOqJQrG4nJxAA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8095/api/admin/cities",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"api",
+						"admin",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8095/api/auth/sign-in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"87654321\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8095/api/admin/sign-in",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"api",
+						"admin",
+						"sign-in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8095/api/admin/sign-up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"test\",\r\n    \"email\": \"test@gmail.com\",\r\n    \"password\": \"12345678\",\r\n    \"roles\": [\"user\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8095/api/admin/sign-up",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"api",
+						"admin",
+						"sign-up"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

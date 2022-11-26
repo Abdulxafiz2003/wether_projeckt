@@ -1,0 +1,390 @@
+{
+  "uuid": "a99dbb8f-829d-42e9-be34-267f37366274",
+  "lastMigration": 24,
+  "name": "Mockoon collection",
+  "endpointPrefix": "api/admin",
+  "latency": 0,
+  "port": 8095,
+  "hostname": "127.0.0.1",
+  "routes": [
+    {
+      "uuid": "3afa819b-2e8a-4050-9e58-6b6b5b4655d5",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "cities-list",
+      "responses": [
+        {
+          "uuid": "4da4adbd-8dd5-4182-a133-620cd1404a23",
+          "body": "[\r\n    {\r\n        \"id\": 1,\r\n        \"citiesName\": \"Tashkent\",\r\n        \"weather\": \"rain\",\r\n        \"degree\": \"7C°\",\r\n        \"status\": true,\r\n        \"creationDate\": \"2022-11-25T09:09:46.082+00:00\"\r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"citiesName\": \"Samarqand\",\r\n        \"weather\": \"humid\",\r\n        \"degree\": \"12C°\",\r\n        \"status\": true,\r\n        \"creationDate\": \"2022-11-25T09:10:44.047+00:00\"\r\n    },\r\n    {\r\n        \"id\": 3,\r\n        \"citiesName\": \"Jizzax\",\r\n        \"weather\": \"rain\",\r\n        \"degree\": \"6C°\",\r\n        \"status\": true,\r\n        \"creationDate\": \"2022-11-25T09:10:57.673+00:00\"\r\n    },\r\n    {\r\n        \"id\": 4,\r\n        \"citiesName\": \"Namangan\",\r\n        \"weather\": \"rain\",\r\n        \"degree\": \"6C°\",\r\n        \"status\": false,\r\n        \"creationDate\": \"2022-11-25T09:11:11.558+00:00\"\r\n    }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "JwtAdminToken",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2OTM2NzM2MSwiZXhwIjoxNjY5NDUzNzYxfQ.J7099bEQmgLl38ljT4Wcu_5v1ALBIwGQvjkaYWHlhArIwy79C_PBFG3gTnGaEvmE4OkP8qrk_JOqJQrG4nJxAA"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "2203557d-4efc-4fae-a959-8a8ce4ae0d2f",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "user-list",
+      "responses": [
+        {
+          "uuid": "4dffd660-679c-4ac5-9818-02e118d4fd1e",
+          "body": "[\r\n    {\r\n        \"id\": 1,\r\n        \"username\": \"admin\",\r\n        \"email\": \"admin@gmail.com\",\r\n        \"password\": \"$2a$10$qJXzFpAP9EMA/nc762KYg.Dpo4WrznW/vdzvb32tQEKN44XWyf1SS\",\r\n        \"roles\": [\r\n            {\r\n                \"id\": 1,\r\n                \"name\": \"ROLE_ADMIN\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"username\": \"user\",\r\n        \"email\": \"user@gmail.com\",\r\n        \"password\": \"$2a$10$Rq3B1eq1OP8g1Oyb3CnmHe8kEqdsY6UA6jqPwOJJSHtxS8D3iiMSW\",\r\n        \"roles\": [\r\n            {\r\n                \"id\": 3,\r\n                \"name\": \"ROLE_USER\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"id\": 4,\r\n        \"username\": \"abdulxay\",\r\n        \"email\": \"abdulxay@gmail.com\",\r\n        \"password\": \"$2a$10$E5KgOzkECC4fEGr3vlevcOCboNOlJdaiX8/EphJBnDc0Lut424rLy\",\r\n        \"roles\": [\r\n            {\r\n                \"id\": 3,\r\n                \"name\": \"ROLE_USER\"\r\n            }\r\n        ]\r\n    }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "JwtAdminToken",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2OTM2NzM2MSwiZXhwIjoxNjY5NDUzNzYxfQ.J7099bEQmgLl38ljT4Wcu_5v1ALBIwGQvjkaYWHlhArIwy79C_PBFG3gTnGaEvmE4OkP8qrk_JOqJQrG4nJxAA"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "59cf5b9e-7ee4-41dd-8efc-0864d7cd3855",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "edit-user/id",
+      "responses": [
+        {
+          "uuid": "a7a336b1-4f05-4284-b8ac-c09dee22214f",
+          "body": "{\r\n    \"message\": \"User updated\"\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "REQUEST BODY EXAMPLE {     \"username\": \"Abdulxay\",     \"email\": \"abdulxay@gmail.com\",     \"password\": \"87654321\",     \"roles\": [\"user\"] }",
+          "headers": [
+            {
+              "key": "JwtAdminToken",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2OTM2NzM2MSwiZXhwIjoxNjY5NDUzNzYxfQ.J7099bEQmgLl38ljT4Wcu_5v1ALBIwGQvjkaYWHlhArIwy79C_PBFG3gTnGaEvmE4OkP8qrk_JOqJQrG4nJxAA"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "395496ee-28ca-4047-affe-24c9c7c59e34",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "delete-user/id",
+      "responses": [
+        {
+          "uuid": "0567394d-7322-4a64-888b-9282e98e678f",
+          "body": "{\r\n    \"message\": \"User was deleted\"\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "JwtAdminToken",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2OTM2NzM2MSwiZXhwIjoxNjY5NDUzNzYxfQ.J7099bEQmgLl38ljT4Wcu_5v1ALBIwGQvjkaYWHlhArIwy79C_PBFG3gTnGaEvmE4OkP8qrk_JOqJQrG4nJxAA"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "0ad7402b-5aeb-42df-a835-9502034d99f1",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "add-city-weather",
+      "responses": [
+        {
+          "uuid": "eab21310-fc89-4d36-bb09-eb939e1b763a",
+          "body": "{\r\n    \"message\": \"Successfully added\"\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "REQUEST BODY EXAMPLE  { \"citiesName\": \"Tashkent\",     \"weather\": \"rain\",     \"degree\": \"6\",     \"status\": true }",
+          "headers": [
+            {
+              "key": "JwtAdminToken",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2OTM2NzM2MSwiZXhwIjoxNjY5NDUzNzYxfQ.J7099bEQmgLl38ljT4Wcu_5v1ALBIwGQvjkaYWHlhArIwy79C_PBFG3gTnGaEvmE4OkP8qrk_JOqJQrG4nJxAA"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "9caec5a7-fe3a-4331-a3af-d2f8377c6ced",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "edit-city",
+      "responses": [
+        {
+          "uuid": "dd63633e-9147-4bd9-a022-2b6059d3d285",
+          "body": "{\r\n    \"message\": \"City update successfully\"\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "REQUEST BODY EXAMPLE  { \"id\": 1,     \"citiesName\": \"Tashkent\",     \"weather\": \"snow\",     \"degree\": \"8\",     \"creationDate\": \"2022-11-24\" }",
+          "headers": [
+            {
+              "key": "JwtAdminToken",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2OTM2NzM2MSwiZXhwIjoxNjY5NDUzNzYxfQ.J7099bEQmgLl38ljT4Wcu_5v1ALBIwGQvjkaYWHlhArIwy79C_PBFG3gTnGaEvmE4OkP8qrk_JOqJQrG4nJxAA"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "861b9f50-3db1-4dd1-807b-f1e7f35fab79",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "delete-city/id",
+      "responses": [
+        {
+          "uuid": "bd8cc034-b3d9-4aa7-a318-377daa7148a9",
+          "body": "{\r\n    \"message\": \"City was deleted\"\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "JwtAdminToken",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2OTM2NzM2MSwiZXhwIjoxNjY5NDUzNzYxfQ.J7099bEQmgLl38ljT4Wcu_5v1ALBIwGQvjkaYWHlhArIwy79C_PBFG3gTnGaEvmE4OkP8qrk_JOqJQrG4nJxAA"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "446d08fd-cbb9-45f2-a1de-cb23c942e9bd",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "cities-name",
+      "responses": [
+        {
+          "uuid": "9e5130ce-9496-4bee-95c9-9eb39c6342d3",
+          "body": "[\r\n    \"Tashkent\",\r\n    \"Samarqand\",\r\n    \"Jizzax\"\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "JwtAdminToken",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2OTM2NzM2MSwiZXhwIjoxNjY5NDUzNzYxfQ.J7099bEQmgLl38ljT4Wcu_5v1ALBIwGQvjkaYWHlhArIwy79C_PBFG3gTnGaEvmE4OkP8qrk_JOqJQrG4nJxAA"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "5b6aa13a-23a0-497f-9941-47f9f814c9de",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "cities",
+      "responses": [
+        {
+          "uuid": "bcc3ab21-f7de-4e4f-9ca5-3b1f43a5bad5",
+          "body": "[\r\n    {\r\n        \"id\": 1,\r\n        \"citiesName\": \"Tashkent\",\r\n        \"weather\": \"rain\",\r\n        \"degree\": \"7C°\",\r\n        \"status\": true,\r\n        \"creationDate\": \"2022-11-25T09:09:46.082+00:00\"\r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"citiesName\": \"Samarqand\",\r\n        \"weather\": \"humid\",\r\n        \"degree\": \"12C°\",\r\n        \"status\": true,\r\n        \"creationDate\": \"2022-11-25T09:10:44.047+00:00\"\r\n    },\r\n    {\r\n        \"id\": 3,\r\n        \"citiesName\": \"Jizzax\",\r\n        \"weather\": \"rain\",\r\n        \"degree\": \"6C°\",\r\n        \"status\": true,\r\n        \"creationDate\": \"2022-11-25T09:10:57.673+00:00\"\r\n    }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "JwtAdminToken",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2OTM2NzM2MSwiZXhwIjoxNjY5NDUzNzYxfQ.J7099bEQmgLl38ljT4Wcu_5v1ALBIwGQvjkaYWHlhArIwy79C_PBFG3gTnGaEvmE4OkP8qrk_JOqJQrG4nJxAA"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "6f072239-7094-4a2b-be43-dc2342589b97",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "sign-in",
+      "responses": [
+        {
+          "uuid": "c55a2700-4401-4670-93c8-efa37aa42c3e",
+          "body": "{\r\n    \"token\": \"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2OTM2NzM2MSwiZXhwIjoxNjY5NDUzNzYxfQ.J7099bEQmgLl38ljT4Wcu_5v1ALBIwGQvjkaYWHlhArIwy79C_PBFG3gTnGaEvmE4OkP8qrk_JOqJQrG4nJxAA\",\r\n    \"type\": \"Bearer\",\r\n    \"id\": 1,\r\n    \"username\": \"admin\",\r\n    \"email\": \"admin@gmail.com\",\r\n    \"roles\": [\r\n        \"ROLE_ADMIN\"\r\n    ]\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "REQUEST BODY EXAMPLE  {\"username\": \"admin\",     \"password\": \"87654321\" }",
+          "headers": [
+            {
+              "key": "JwtAdminToken",
+              "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2OTM2NzM2MSwiZXhwIjoxNjY5NDUzNzYxfQ.J7099bEQmgLl38ljT4Wcu_5v1ALBIwGQvjkaYWHlhArIwy79C_PBFG3gTnGaEvmE4OkP8qrk_JOqJQrG4nJxAA"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "07fba05b-aa9c-4966-9d22-bbb76dd76642",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "sign-up",
+      "responses": [
+        {
+          "uuid": "d1574ada-d63b-4c89-835d-9db60069dd2d",
+          "body": "{\r\n    \"message\": \"User CREATED\"\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "REQUEST BODY EXAMPLE {\"username\": \"test\",     \"email\": \"test@gmail.com\",     \"password\": \"12345678\",     \"roles\": [\"user\"] }",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
